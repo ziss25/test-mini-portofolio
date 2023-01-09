@@ -1,0 +1,119 @@
+.profile {
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid red;
+}
+
+.profile__img {
+  width: 125px;
+  height: 125px;
+  border: 3px solid $red;
+  border-radius: 50%;
+  padding: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.profile__name {
+  margin-bottom: 0.1rem;
+}
+
+.profile__profession {
+  margin-bottom: 1rem;
+}
+
+.profile__socialMedia {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  font-size: $h2-font-size;
+  margin-bottom: 1.5rem;
+  color: $title-color;
+  // border: 1px solid red;
+  // perubahan warna pada social-media ketika di sorot
+  .facebook:hover,
+  .github:hover,
+  .linkedin:hover {
+    color: $red;
+    cursor: pointer;
+  }
+}
+
+.profile__info-description {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 2rem;
+  // border: 1px solid red;
+  .info_num {
+    font-size: $small-font-size;
+    color: $title-color;
+  }
+  .info_text {
+    font-size: $smaller-font-size;
+    color: $text-color;
+  }
+}
+
+.profile__cv {
+  // border: 1px solid red;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  // contain btn download
+  .btn-cv {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin-right: 1rem;
+    background-color: $red;
+    color: white;
+    h3 {
+      font-weight: 400;
+      margin-right: 0.5rem;
+    }
+    i {
+      font-size: $h3-font-size;
+    }
+  }
+  //contain btn social-media
+  .social_media--cv {
+    display: flex;
+    width: 30%;
+    // border: 1px solid red;
+    justify-content: space-between;
+    .btn-wa {
+      width: 45%;
+      font-size: $h2-font-size;
+      padding: 4px;
+    }
+    .btn-messanger {
+      width: 45%;
+      font-size: $h2-font-size;
+    }
+  }
+}
+
+// utils tambahan pada button
+.btn {
+  border: none;
+  border-radius: $md-rounded;
+  cursor: pointer;
+}
+// ketika di soto
+.btn-social:hover {
+  color: $red;
+  cursor: pointer;
+}
