@@ -67,7 +67,7 @@
   position: absolute;
   bottom: -1000px;
   // bottom: 0;
-  transition: bottom 1s ease-in;
+  transition: bottom 0.3s ease-in;
   left: 0;
   right: 0;
   padding: 6px 12px;
@@ -100,7 +100,7 @@
   .project__modal {
     bottom: 0;
     // top: 0;
-    transition: bottom 1s ease-in-out;
+    transition: bottom 0.3s ease-in-out;
   }
 }
 

@@ -1,4 +1,5 @@
 .filter {
+  // border: 1px solid red;
   justify-content: center;
   color: blue;
   background-color: $gray;
@@ -6,7 +7,7 @@
   margin-bottom: 3rem;
   button {
     width: 150px;
-    height: 35px;
+    height: 40px;
     font-weight: 600;
     border-radius: $md-rounded;
     border: none;

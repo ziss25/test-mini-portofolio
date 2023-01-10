@@ -2,6 +2,7 @@ const PROJECT_BTN = document.querySelector('.projects-btn');
 const SKILL_BTN = document.querySelector('.skils-btn');
 const SKILL_OUTPUT = document.querySelector('.skill');
 const PROJECT_OUTPUT = document.querySelector('.project');
+const CONTENT = document.querySelector('.content');
 
 // changed class btn filters & render sesuai dengan contain nya
 function changedColorsButton(project) {}
@@ -17,6 +18,10 @@ PROJECT_BTN.addEventListener('click', () => {
   // tambahin class none nya
   SKILL_OUTPUT.classList.add('none');
   PROJECT_OUTPUT.classList.remove('none');
+
+  // animation aos
+  // CONTENT.setAttribute('data-aos', 'fade-up');
+  // CONTENT.setAttribute('data-aos-duration', '3000');
 });
 
 SKILL_BTN.addEventListener('click', () => {
@@ -30,4 +35,7 @@ SKILL_BTN.addEventListener('click', () => {
   // hapus class none nya
   PROJECT_OUTPUT.classList.add('none');
   SKILL_OUTPUT.classList.remove('none');
+
+  // CONTENT.removeAttribute('data-aos');
+  // CONTENT.removeAttribute('data-aos-duration');
 });

@@ -1,20 +1,20 @@
 .profile {
+  // border: 1px solid red;
   // width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // border: 1px solid red;
 }
 
 .profile__img {
   width: 125px;
   height: 125px;
-  border: 3px solid $red;
+  // border: 3px solid $red;
   border-radius: 50%;
   padding: 4px;
-  overflow: hidden;
-  margin-bottom: 0.75rem;
+  // overflow: hidden;
+  margin-bottom: 1rem;
   img {
     border-radius: 50%;
     object-fit: cover;
@@ -31,13 +31,20 @@
 }
 
 .profile__socialMedia {
+  // border: 1px solid red;
   display: flex;
   width: 50%;
   justify-content: space-evenly;
   font-size: $h2-font-size;
   margin-bottom: 1.5rem;
-  color: $title-color;
-  // border: 1px solid red;
+
+  // icons social media
+  a {
+    i {
+      color: $title-color;
+    }
+  }
+
   // perubahan warna pada social-media ketika di sorot
   .facebook:hover,
   .github:hover,
@@ -48,12 +55,12 @@
 }
 
 .profile__info-description {
+  // border: 1px solid red;
   display: flex;
   width: 350px;
   justify-content: space-between;
   text-align: center;
   margin-bottom: 2rem;
-  // border: 1px solid red;
   .info_num {
     font-size: $small-font-size;
     color: $title-color;
@@ -70,6 +77,7 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 3rem;
+
   // contain btn download
   .btn-cv {
     width: 60%;
@@ -88,6 +96,7 @@
       font-size: $h3-font-size;
     }
   }
+
   //contain btn social-media
   .social_media--cv {
     display: flex;
@@ -98,10 +107,16 @@
       width: 45%;
       font-size: $h2-font-size;
       padding: 4px;
+      a {
+        color: $title-color;
+      }
     }
     .btn-messanger {
       width: 45%;
       font-size: $h2-font-size;
+      a {
+        color: $title-color;
+      }
     }
   }
 }
@@ -112,8 +127,13 @@
   border-radius: $md-rounded;
   cursor: pointer;
 }
-// ketika di soto
+
+// ketika di sorot
 .btn-social:hover {
-  color: $red;
   cursor: pointer;
+  a {
+    i {
+      color: $red;
+    }
+  }
 }

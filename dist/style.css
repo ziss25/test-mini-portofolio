@@ -1,3 +1,53 @@
+.gradient-border {
+  --borderWidth: 50%;
+  --angle: 0deg;
+  width: 100px;
+  height: 100px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  right: 0;
+  bottom: 0;
+  height: 110%;
+  width: 110%;
+  background: linear-gradient(60deg, rgb(180, 6, 6), rgb(180, 6, 6), #fc223f, #7c0808, #8f0606, #d11c1c, rgb(180, 6, 6), rgb(180, 6, 6));
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  -webkit-animation: animatedgradient 8s ease alternate infinite;
+          animation: animatedgradient 8s ease alternate infinite;
+  background-size: 150% 150%;
+}
+
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 300% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 300% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -102,11 +152,9 @@ a {
 .profile__img {
   width: 125px;
   height: 125px;
-  border: 3px solid rgb(180, 6, 6);
   border-radius: 50%;
   padding: 4px;
-  overflow: hidden;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 .profile__img img {
   border-radius: 50%;
@@ -129,6 +177,8 @@ a {
   justify-content: space-evenly;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+}
+.profile__socialMedia a i {
   color: hsl(207deg, 12%, 15%);
 }
 .profile__socialMedia .facebook:hover,
@@ -187,9 +237,15 @@ a {
   font-size: 1.25rem;
   padding: 4px;
 }
+.profile__cv .social_media--cv .btn-wa a {
+  color: hsl(207deg, 12%, 15%);
+}
 .profile__cv .social_media--cv .btn-messanger {
   width: 45%;
   font-size: 1.25rem;
+}
+.profile__cv .social_media--cv .btn-messanger a {
+  color: hsl(207deg, 12%, 15%);
 }
 
 .btn {
@@ -199,8 +255,10 @@ a {
 }
 
 .btn-social:hover {
-  color: rgb(180, 6, 6);
   cursor: pointer;
+}
+.btn-social:hover a i {
+  color: rgb(180, 6, 6);
 }
 
 .filter {
@@ -212,7 +270,7 @@ a {
 }
 .filter button {
   width: 150px;
-  height: 35px;
+  height: 40px;
   font-weight: 600;
   border-radius: 10px;
   border: none;
@@ -291,7 +349,7 @@ a {
   flex-direction: column;
   position: absolute;
   bottom: -1000px;
-  transition: bottom 1s ease-in;
+  transition: bottom 0.3s ease-in;
   left: 0;
   right: 0;
   padding: 6px 12px;
@@ -316,7 +374,7 @@ a {
 
 .project__item:hover .project__modal {
   bottom: 0;
-  transition: bottom 1s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 
 .none {
