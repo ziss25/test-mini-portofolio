@@ -49,7 +49,7 @@
   .facebook:hover,
   .github:hover,
   .linkedin:hover {
-    color: $red;
+    color: $red !important;
     cursor: pointer;
   }
 }
@@ -80,20 +80,27 @@
 
   // contain btn download
   .btn-cv {
+    border: 1px solid $red;
     width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
     margin-right: 1rem;
     background-color: $red;
     color: white;
-    h3 {
-      font-weight: 400;
-      margin-right: 0.5rem;
-    }
-    i {
-      font-size: $h3-font-size;
+
+    // ini adalah contain link trgger untuk donwload file pdf nya
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      h3 {
+        font-weight: 400;
+        margin-right: 0.5rem;
+        color: white;
+      }
+      i {
+        font-size: $h3-font-size;
+        color: white;
+      }
     }
   }
 
@@ -133,7 +140,7 @@
   cursor: pointer;
   a {
     i {
-      color: $red;
+      color: $red !important;
     }
   }
 }

@@ -1,10 +1,9 @@
 .filter {
   // border: 1px solid red;
   justify-content: center;
-  color: blue;
   background-color: $gray;
   border-radius: $md-rounded;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   button {
     width: 150px;
     height: 40px;
@@ -16,6 +15,10 @@
     font-size: $normal-font-size;
     background-color: $gray;
     cursor: pointer;
+  }
+
+  .projects-btn {
+    // background-color: white;
   }
 }
 

@@ -75,7 +75,10 @@ span {
 }
 
 body {
-  padding: 60px 2rem;
+  padding-top: 60px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  bottom: 0;
 }
 
 .container {
@@ -90,12 +93,12 @@ body {
   border: 1px solid red;
 }
 
-.grid {
+.grid_my {
   display: grid;
   gap: 1.5rem;
 }
 
-.flex {
+.flex_my {
   display: flex;
 }
 
@@ -184,7 +187,7 @@ a {
 .profile__socialMedia .facebook:hover,
 .profile__socialMedia .github:hover,
 .profile__socialMedia .linkedin:hover {
-  color: rgb(180, 6, 6);
+  color: rgb(180, 6, 6) !important;
   cursor: pointer;
 }
 
@@ -211,21 +214,26 @@ a {
   margin-bottom: 3rem;
 }
 .profile__cv .btn-cv {
+  border: 1px solid rgb(180, 6, 6);
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
   margin-right: 1rem;
   background-color: rgb(180, 6, 6);
   color: white;
 }
-.profile__cv .btn-cv h3 {
+.profile__cv .btn-cv a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.profile__cv .btn-cv a h3 {
   font-weight: 400;
   margin-right: 0.5rem;
+  color: white;
 }
-.profile__cv .btn-cv i {
+.profile__cv .btn-cv a i {
   font-size: 1rem;
+  color: white;
 }
 .profile__cv .social_media--cv {
   display: flex;
@@ -258,15 +266,14 @@ a {
   cursor: pointer;
 }
 .btn-social:hover a i {
-  color: rgb(180, 6, 6);
+  color: rgb(180, 6, 6) !important;
 }
 
 .filter {
   justify-content: center;
-  color: blue;
   background-color: #e5e7eb;
   border-radius: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .filter button {
   width: 150px;
@@ -280,11 +287,43 @@ a {
   background-color: #e5e7eb;
   cursor: pointer;
 }
-
 .test {
   background-color: red;
 }
 
+.scroll-down {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.938rem;
+}
+.scroll-down__title {
+  color: hsl(207deg, 12%, 15%);
+}
+.scroll-down__icon {
+  color: rgb(180, 6, 6);
+  transform: translateY(3px);
+  -webkit-animation: scroll-down-animate 1s linear 2s infinite alternate;
+          animation: scroll-down-animate 1s linear 2s infinite alternate;
+}
+
+@-webkit-keyframes scroll-down-animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes scroll-down-animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(3px);
+  }
+}
 .content {
   width: 100%;
   display: flex;
@@ -330,7 +369,7 @@ a {
   width: 80%;
   grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .project {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -341,6 +380,8 @@ a {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  background-color: #d1d5db;
 }
 
 .project__modal {
@@ -354,7 +395,7 @@ a {
   right: 0;
   padding: 6px 12px;
   height: 100%;
-  background: linear-gradient(180deg, hsla(207deg, 24%, 40%, 0.3) 0%, hsl(207deg, 24%, 4%) 95%);
+  background: linear-gradient(180deg, hsla(207deg, 24%, 40%, 0.3) 0%, hsl(207deg, 24%, 4%) 100%);
 }
 .project__modal p {
   color: white;
@@ -379,4 +420,15 @@ a {
 
 .none {
   display: none;
+}
+
+.footer {
+  text-align: center;
+  color: hsl(207deg, 12%, 45%);
+}
+.footer__title {
+  font-size: 0.75rem;
+}
+.footer__icon {
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */

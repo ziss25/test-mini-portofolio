@@ -13,131 +13,133 @@
     <link rel="stylesheet" href="/dist/style.css" />
     <title>mini Portofolio</title>
   </head>
-  <body>
-    <header class="header flex">
-      <h2 class="header__title title">zisscode</h2>
-      <i class="header__icons fa-solid fa-moon"></i>
+  <body id="body">
+    <header class="header flex_my">
+      <h2 class="title_colors hover_bg_dark header__title">zisscode</h2>
+      <i id="toogle-dark-mode" class="title_colors header__icons fa-solid fa-moon"></i>
     </header>
-
     <main class="container" data-aos="fade-up" data-aos-duration="3000">
-      <!-- profile -->
       <section class="profile">
         <div class="profile__img gradient-border">
           <img class="" src="/assets/img/picture.jpg" alt="picture" srcset="" />
         </div>
-
-        <h2 class="profile__name title">@ziss aja</h2>
-        <h4 class="profile__profession subtitle">junior Web developer</h4>
-
+        <h2 class="title_colors title profile__name">@ziss aja</h2>
+        <h4 class="text_colors text profile__profession subtitle">junior Web developer</h4>
         <div class="profile__socialMedia">
           <a href="https://www.facebook.com/people/Azis/100011444186983/" target="_blank">
-            <i class="facebook fa-brands fa-facebook-f"></i>
+            <i class="text_colors facebook fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://github.com/ziss25" target="_blank">
-            <i class="github fa-brands fa-github"></i>
+            <i class="text_colors github fa-brands fa-github"></i>
           </a>
           <a href="#tidak_punya">
-            <i class="linkedin fa-brands fa-linkedin"></i>
+            <i class="text_colors linkedin fa-brands fa-linkedin"></i>
           </a>
         </div>
-
         <div class="profile__info-description">
           <div class="info__contain__item">
-            <h4 class="info_num">6</h4>
-            <h4 class="info_text">
+            <h4 class="text_colors info_num">6</h4>
+            <h4 class="text_colors info_text">
               mounth of <br />
               Exprience
             </h4>
           </div>
           <div class="info__contain__item">
-            <h4 class="info_num">+14</h4>
-            <h4 class="info_text">
+            <h4 class="text_colors info_num">+14</h4>
+            <h4 class="text_colors info_text">
               Completed <br />
               projects
             </h4>
           </div>
           <div class="info__contain__item">
-            <h4 class="info_num">3</h4>
-            <h4 class="info_text">
+            <h4 class="text_colors info_num">3</h4>
+            <h4 class="text_colors info_text">
               Satisfied <br />
               customers
             </h4>
           </div>
         </div>
-
         <div class="profile__cv">
           <button class="btn btn-cv">
-            <h3>Download CV</h3>
-            <i class="download fa-solid fa-download"></i>
+            <!-- download pdf  bisa lewat a href -->
+            <a href="/assets/pdf/admin.pdf">
+              <h3>Download CV</h3>
+              <i class="download fa-solid fa-download"></i>
+            </a>
           </button>
           <div class="social_media--cv">
-            <button class="btn btn-wa btn-social">
+            <button class="contain_colors btn btn-wa btn-social">
               <a href="https://api.whatsapp.com/send?phone=6281347435827&text=Hello" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i class="text_colors fa-brands fa-whatsapp"></i>
               </a>
             </button>
-            <button class="btn btn-messanger btn-social">
+            <button class="contain_colors btn btn-messanger btn-social">
               <a href="#belum ada">
-                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="text_colors fa-brands fa-facebook-messenger messenger"></i>
               </a>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="filter flex">
-        <button class="projects-btn">Projects</button>
-        <button class="skils-btn">Skills</button>
+      <section class="contain_colors filter flex_my">
+        <button class="body_colors text_colors projects-btn">Projects</button>
+        <button class="contain_colors text_colors skils-btn">Skills</button>
       </section>
 
-      <!-- data-aos="fade-up" data-aos-duration="3000" -->
+      <section class="scroll-down flex_my">
+        <h4 class="text_colors scroll-down__title">Scroll Down</h4>
+        <i class="scroll-down__icon fa-solid fa-angle-down"></i>
+      </section>
+
+      <!-- animatin by Aos -->
       <section class="content" data-aos="fade-up" data-aos-duration="3000">
-        <div class="skill grid none">
+        <div class="contain_colors skill grid_my none">
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>HTML</h3>
-              <p>Beginers</p>
+              <h3 class="text_colors">HTML</h3>
+              <p class="text_colors">Beginers</p>
             </div>
           </div>
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>CSS</h3>
-              <p>Beginers</p>
+              <h3 class="text_colors">CSS</h3>
+              <p class="text_colors">Beginers</p>
             </div>
           </div>
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>javaScript</h3>
-              <p>basic</p>
+              <h3 class="text_colors">javaScript</h3>
+              <p class="text_colors">basic</p>
             </div>
           </div>
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>Sass</h3>
-              <p>basic</p>
+              <h3 class="text_colors">Sass</h3>
+              <p class="text_colors">basic</p>
             </div>
           </div>
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>Tailwind</h3>
-              <p>basic</p>
+              <h3 class="text_colors">Tailwind</h3>
+              <p class="text_colors">basic</p>
             </div>
           </div>
           <div class="skill__item">
             <i class="fa-regular fa-square-check"></i>
             <div class="skil-information">
-              <h3>Git</h3>
-              <p>basic</p>
+              <h3 class="text_colors">Git</h3>
+              <p class="text_colors">basic</p>
             </div>
           </div>
         </div>
 
-        <div class="project grid none">
+        <div class="project grid_my">
           <div class="project__item">
             <img src="/assets/img/REST-COUNTRIES.png" alt="" />
             <div class="project__modal">
@@ -181,10 +183,21 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <h3 class="text_colors footer__title">
+        <span class="footer__icon">
+          <i class="fa-regular fa-copyright"></i>
+        </span>
+        zisscode. All rigths reserved
+      </h3>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
   </body>
 </html>

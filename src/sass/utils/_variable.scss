@@ -2,10 +2,15 @@
 $hue: 207;
 $red: rgb(180, 6, 6);
 $gray: #e5e7eb;
+$box-shadow: #d1d5db;
 //----
 $title-color: hsl($hue, 12%, 15%);
 $text-color: hsl($hue, 12%, 45%);
 $container-color: #fff;
+$body-color: hsl($hue, 100%, 99%);
+
+// dark
+$title-color-dark: #1e293b;
 
 // breakpoint
 $landscape: 768px;

@@ -1,5 +1,5 @@
 .content {
-  // border: 1px solid red;
+  // border: 1px solid red;`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@
   width: 80%;
   grid-template-columns: repeat(1, 1fr);
 
-  @media (min-width: $landscape) {
+  @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -57,7 +57,10 @@
   border-radius: $md-rounded;
   overflow: hidden;
   cursor: pointer;
-  // border: 1px solid red;
+
+  // dikasih box shadow agar card nya lebih keliatan
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: $box-shadow;
 }
 
 .project__modal {
@@ -72,8 +75,7 @@
   right: 0;
   padding: 6px 12px;
   height: 100%;
-
-  background: linear-gradient(180deg, hsla($hue, 24%, 40%, 0.3) 0%, hsla($hue, 24%, 4%, 1) 95%);
+  background: linear-gradient(180deg, hsla($hue, 24%, 40%, 0.3) 0%, hsla($hue, 24%, 4%, 1) 100%);
 
   p {
     color: white;
